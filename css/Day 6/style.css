@@ -1,0 +1,106 @@
+.purple
+{
+    background-color: rgba(128,0,128,0.6) }
+    
+        .container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            margin: 50px auto;
+        }
+
+        .box {
+            position:absolute;
+            width: 180px;
+            height: 180px;
+        }
+
+        .box1 {
+            background-color: rgba(255, 0, 0, 0.3); /* Red, 30% opacity */
+            top: 20px;
+            left: 20px;
+        }
+
+        .box2 {
+            background-color: rgba(0, 255, 0, 0.6); /* Green, 60% opacity */
+            top: 60px;
+            left: 60px;
+        }
+
+        .box3 {
+            background-color: rgba(0, 0, 255, 0.9); /* Blue, 90% opacity */
+            top: 100px;
+            left: 100px;
+        }
+    button{
+
+        Background: rgba(0, 200, 100, 0.8);
+        color :rgba(255, 255, 255, 0.9);
+        Border:2p x solid rgba(0, 200, 100, 1);
+    }
+
+
+
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg,#6a11cb,#2575fc);
+        font-family: arial,sans-serif;
+    } 
+.glass-card{
+    width: 320px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border: 1px soloid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+.glass-card h2 {
+    margin-bottom: 10px;
+}
+.glass-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.warning-banner{background-color: rgba(255, 220, 0, 0.2);
+}
+.fade-box{
+    opacity:1;
+    transition: opacity 0.3s ease ;
+}
+    .fade-box:hover{
+        opacity: 0.3;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

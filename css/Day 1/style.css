@@ -1,0 +1,21 @@
+h2{
+    color: orange;
+}
+button{
+    background-color: rgb(47, 68, 183);
+    color:white;
+}
+p{
+    background-color: black;
+    color: whitesmoke;
+}
+h1{
+    color:tomato;
+}
+p{
+    color: black;
+    background-color: gold;
+}
+a{
+    color: skyblue;
+}

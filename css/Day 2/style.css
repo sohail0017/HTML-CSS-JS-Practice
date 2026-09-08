@@ -1,0 +1,40 @@
+nav a{
+    font-weight: 500;
+}
+nav a:hover{
+    font-weight: 700;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    font-weight: 700;
+}
+h3{
+    font-weight:600 ;
+}
+p{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+}
+#original{
+    text-decoration: line-through;
+    color: gray;
+}
+#sale{
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
+}
+.line{
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0px;
+   text-transform: 
+}

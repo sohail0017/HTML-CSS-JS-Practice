@@ -1,0 +1,53 @@
+#Box1{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(243, 141, 17);
+    
+}
+#Box1:hover{
+opacity: 30%;
+}
+#Box2{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    opacity: 0.6;
+}
+#Box2:hover{
+    opacity:1;
+}
+button{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  opacity: 0.8;
+}
+.box-rgba{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(226, 17, 226);
+}
+.box-opacity{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(226,17, 226) ;
+    opacity: 0.5;
+}
+.animation{
+    height: 100px;
+    width: 100px;
+  opacity: 1;
+  transition: fadeIn 0.5s ease-in forwards;
+}
+
+
+  .fade-in {
+    opacity: 0.5;
+    transition: fadeIn 0.5s ease-in forwards;
+  }
+
+

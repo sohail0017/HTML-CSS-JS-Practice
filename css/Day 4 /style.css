@@ -1,0 +1,38 @@
+ p{
+    color:brown;}
+.text{
+    color:blue;
+}
+.highlight{
+    color:yellow;
+}
+#special{
+    color:purple;
+}
+#text{
+    color:blue; /* this will be overridden by the inline style */ */
+}
+
+#highlight{ 
+    color:green; /* this will be overridden by the inline style */ */
+}
+#special {
+    color:green;
+}
+/* rule 1 */
+.container .box p{ 
+    color:red;
+}
+/* rule 2 */
+#wrapper p{
+    color:blue;
+}
+/* rule 3 */
+.container #special{
+    color:green;
+}
+  
+
+
+
+
