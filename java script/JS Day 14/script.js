@@ -76,95 +76,118 @@
 
 
 
-async function Registar (){
-    return new Promise((resolve,reject)=>{
-        let delay = Math.floor(Math.random() * 4)
-        let isPass = Math.random() > 0.4;
+// async function Registar (){
+//     return new Promise((resolve,reject)=>{
+//         let delay = Math.floor(Math.random() * 4)
+//         let isPass = Math.random() > 0.4;
 
-        setTimeout(()=>{
-            if (isPass) {
-               resolve("Register form submitted")
+//         setTimeout(()=>{
+//             if (isPass) {
+//                resolve("Register form submitted")
                 
-            } else {
-                reject("Register form  didn't submitted")
-            }
-        },delay)
-        } )
+//             } else {
+//                 reject("Register form  didn't submitted")
+//             }
+//         },delay)
+//         } )
 
-}
+// }
 
-function sendVerificationEmail (){
-    return new Promise((resolve,reject)=>{
-        let delay = Math.floor(Math.random() * 4)
-        let isPass = Math.random() > 0.4;
+// function sendVerificationEmail (){
+//     return new Promise((resolve,reject)=>{
+//         let delay = Math.floor(Math.random() * 4)
+//         let isPass = Math.random() > 0.4;
 
-        setTimeout(()=>{
-            if (isPass) {
-               resolve("Verified by user")
+//         setTimeout(()=>{
+//             if (isPass) {
+//                resolve("Verified by user")
                 
-            } else {
-                reject("User didn't verify")
-            }
-        },delay)
-        } )
+//             } else {
+//                 reject("User didn't verify")
+//             }
+//         },delay)
+//         } )
     
-}
+// }
 
-function savetoDB(){
-    return new Promise((resolve,reject)=>{
-        let delay = Math.floor(Math.random() * 4)
-        let isPass = Math.random() > 0.4;
+// function savetoDB(){
+//     return new Promise((resolve,reject)=>{
+//         let delay = Math.floor(Math.random() * 4)
+//         let isPass = Math.random() > 0.4;
 
-        setTimeout(()=>{
-            if (isPass) {
-               resolve("User save to DB")
+//         setTimeout(()=>{
+//             if (isPass) {
+//                resolve("User save to DB")
                 
-            } else {
-                reject("User not save to DB")
-            }
-        },delay)
-        } )
+//             } else {
+//                 reject("User not save to DB")
+//             }
+//         },delay)
+//         } )
 
-}
+// }
 
-function welcomeSMS(){
-    return new Promise((resolve,reject)=>{
-        let delay = Math.floor(Math.random() * 4)
-        let isPass = Math.random() > 0.4;
+// function welcomeSMS(){
+//     return new Promise((resolve,reject)=>{
+//         let delay = Math.floor(Math.random() * 4)
+//         let isPass = Math.random() > 0.4;
 
-        setTimeout(()=>{
-            if (isPass) {
-               resolve("Welcome SMS send")
+//         setTimeout(()=>{
+//             if (isPass) {
+//                resolve("Welcome SMS send")
                 
-            } else {
-                reject("Welcome SMS unable to send")
-            }
-        },delay)
-        } )
+//             } else {
+//                 reject("Welcome SMS unable to send")
+//             }
+//         },delay)
+//         } )
 
-}
+// }
 
-async function newUserRegistration(){
-    try {
-        let response1 = await Registar()
-    console.log(response1);
+// async function newUserRegistration(){
+//     try {
+//         let response1 = await Registar()
+//     console.log(response1);
 
-    let response2 = await sendVerificationEmail()
-    console.log(response2);
+//     let response2 = await sendVerificationEmail()
+//     console.log(response2);
     
-    let response3 = await savetoDB()
-    console.log(response3);
+//     let response3 = await savetoDB()
+//     console.log(response3);
 
-    let response4 = await welcomeSMS()
-    console.log(response4);
+//     let response4 = await welcomeSMS()
+//     console.log(response4);
 
-    console.log("User successfully Registered and all steps completed ");
+//     console.log("User successfully Registered and all steps completed ");
 
         
-    } catch (rejectMsg) {
-        console.log(rejectMsg);
-    }
+//     } catch (rejectMsg) {
+//         console.log(rejectMsg);
+//     }
     
+// }
+
+// newUserRegistration();
+
+
+function checkNumber(num){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if (num>10) {
+                resolve(`success!${num} is greater than 10`)
+            } else {
+                reject(`success!${num} is less than 10`)
+            }
+        },1000);
+    })
+
 }
 
-newUserRegistration();
+checkNumber().then((result)=>{
+
+})
+
+
+
+
+
